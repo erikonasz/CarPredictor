@@ -40,7 +40,26 @@ Before training the models, the input images are preprocessed using the ImageDat
 - **CNN**: A custom Convolutional Neural Network (CNN) model is created. CNNs are widely used for image recognition tasks, leveraging their ability to identify patterns in images.
 The models are trained and evaluated using the provided dataset. For transfer learning models (ResNet50, MobileNetV2, and DenseNet121), the pre-trained weights from the ImageNet dataset are loaded. The CNN model is trained from scratch.
 
+# Usage 
+
+Please run every code block from top to bottom, make sure to adjust epoch number to your needs:
+![image](https://github.com/erikonasz/DeepLearning-CarPrediction/assets/75033114/f05e7f44-ae73-4d28-8f90-0c796dfa300e)
+Upload any car image to same directory, predict that image with new command block:
+predict_image("image_location.jpg")
+
 # Training and Evaluation
 The models are compiled with the Adam optimizer and categorical cross-entropy loss. They are trained for 20 epochs with a batch size of 8. During training, the accuracy and loss metrics are recorded for both the training and validation sets.
 
 The training and validation accuracy and loss are plotted for each model using subplots for visual analysis.
+
+# Results 
+
+We evaluated the performance of different models on the car brand classification task using a dataset containing images of various car brands. The models we compared were ResNet50, MobileNetV2, DenseNet121, and a custom CNN.
+
+- ResNet50 achieved an accuracy of ~40%.
+- MobileNetV2 achieved an accuracy of ~83%
+- DenseNet121 achieved an accuracy of ~87%
+- The custom CNN achieved an accuracy of ~50%
+- From these results, we can conclude that DenseNet121 performed the best among the pre-trained models, achieving the highest accuracy. It outperformed both ResNet50 and MobileNetV2. The custom CNN, while achieving a slightly lower accuracy, still demonstrated competitive performance.
+![image](https://github.com/erikonasz/DeepLearning-CarPrediction/assets/75033114/2819664f-d3ce-42ba-b2e9-5370163b265c)
+

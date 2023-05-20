@@ -32,12 +32,12 @@ Before training the models, the input images are preprocessed using the ImageDat
 - Fill in missing pixels with the nearest value
 - Model Comparison
 
-# The project compares the performance of the following models
+# Models for comparison:
 
-**ResNet50**: Known for its depth and residual connections, ResNet50 has 50 layers and addresses the problem of vanishing gradients in deep networks.
-**MobileNetV2**: Designed to be efficient and lightweight, MobileNetV2 utilizes depth-wise separable convolutions, reducing computational complexity while maintaining good accuracy.
-**DenseNet121**: Part of the DenseNet family, DenseNet121 has 121 layers and introduces dense connectivity, where each layer is directly connected to every other layer.
-**CNN**: A custom Convolutional Neural Network (CNN) model is created. CNNs are widely used for image recognition tasks, leveraging their ability to identify patterns in images.
+- **ResNet50**: Known for its depth and residual connections, ResNet50 has 50 layers and addresses the problem of vanishing gradients in deep networks.
+- **MobileNetV2**: Designed to be efficient and lightweight, MobileNetV2 utilizes depth-wise separable convolutions, reducing computational complexity while maintaining good accuracy.
+- **DenseNet121**: Part of the DenseNet family, DenseNet121 has 121 layers and introduces dense connectivity, where each layer is directly connected to every other layer.
+- **CNN**: A custom Convolutional Neural Network (CNN) model is created. CNNs are widely used for image recognition tasks, leveraging their ability to identify patterns in images.
 The models are trained and evaluated using the provided dataset. For transfer learning models (ResNet50, MobileNetV2, and DenseNet121), the pre-trained weights from the ImageNet dataset are loaded. The CNN model is trained from scratch.
 
 # Training and Evaluation

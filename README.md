@@ -45,7 +45,7 @@ The models are trained and evaluated using the provided dataset. For transfer le
 Please run every code block from top to bottom, make sure to adjust epoch number to your needs:
 ![image](https://github.com/erikonasz/DeepLearning-CarPrediction/assets/75033114/f05e7f44-ae73-4d28-8f90-0c796dfa300e)
 Upload any car image to same directory, predict that image with new command block:
-predict_image("image_location.jpg")
+predict_image("image_name.jpg")
 
 # Training and Evaluation
 The models are compiled with the Adam optimizer and categorical cross-entropy loss. They are trained for 20 epochs with a batch size of 8. During training, the accuracy and loss metrics are recorded for both the training and validation sets.
